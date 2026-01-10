@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Path2Fit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/logo.png" alt="Path2Fit Logo" height="40" class="me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="learning-hub.html">Learning Hub</a></li>
+          <li class="nav-item"><a class="nav-link" href="growth-tools.html">Self Assessment & Growth Tools</a></li>
+          <li class="nav-item"><a class="nav-link" href="success-stories.html">Success Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="workshops-events.html">Workshops & Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="advisor.html">Tech Advisor</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="container my-5 text-center">
+    <h1 class="fw-bold">Contact Us</h1>
+    <p class="text-secondary fs-5">
+      Have questions about IT majors, roadmaps, or Path2Fit? Use the form below to send us a message.<br>
+      We aim to respond within 2 business days.
+    </p>
+  </div>
+
+  <!-- Contact Form Card -->
+  <div class="container mb-5">
+    <div class="card shadow bg-dark text-light mx-auto border-primary" style="max-width: 700px;">
+      <div class="card-body">
+        <h4 class="card-title text-center mb-4">Get in Touch</h4>
+        <form action="/index.html" method="get">
+          <div class="mb-3">
+            <b>Full Name</b>
+            <input type="text" id="full-name" name="full-name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <b>Email</b>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <b>Choose a Topic</b>
+            <select id="topic" name="topic" class="form-select">
+              <option value="general">General Question</option>
+              <option value="ai">Question about AI</option>
+              <option value="cyber">Question about Cybersecurity</option>
+              <option value="se">Question about Software Engineering</option>
+              <option value="game">Question about Game Development</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <b>Choose who to contact</b>
+            <input list="contact-person-list" id="contact-person" name="contact-person" class="form-control" required>
+            <datalist id="contact-person-list">
+              <option value="Yazan">
+              <option value="Basheer">
+              <option value="Karam">
+              <option value="Khalid Dabbour">
+              <option value="Ahmad Jihad">
+              <option value="Shahrat Hassan">
+              <option value="Ahmad Massad">
+              <option value="Suliman Shukair">
+            </datalist>
+          </div>
+
+          <div class="mb-3">
+            <b>Your Message</b>
+            <textarea id="message" name="contact-message" rows="5" class="form-control" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary me-2">Send Message</button>
+            <button type="reset" class="btn btn-outline-dark">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Ways to Reach Us -->
+  <div class="container mb-5">
+    <div class="row g-4">
+      
+      <!-- Email Card -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow bg-light text-dark p-3 text-center">
+          <img src="./images/Email.png" alt="Email Icon" class="mx-auto mb-3" style="width:60px; height:60px;">
+          <h5>Contact us by Email</h5>
+          <ul class="list-unstyled mt-2">
+            <li><a href="mailto:202411576@students.asu.eddu.jo" class="text-decoration-none text-dark">202411576@students.asu.eddu.jo</a></li>
+            <li><a href="mailto:202411567@students.asu.eddu.jo" class="text-decoration-none text-dark">202411567@students.asu.eddu.jo</a></li>
+            <li><a href="mailto:202411573@students.asu.eddu.jo" class="text-decoration-none text-dark">202411573@students.asu.eddu.jo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Location Card -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow bg-light text-dark p-3 text-center">
+          <img src="./images/Location.png" alt="Location Icon" class="mx-auto mb-3" style="width:60px; height:60px;">
+          <h5>Other Ways to Reach Us</h5>
+          <p class="small mt-2">
+            You can also visit us at the university or contact student groups related to the Faculty of Information Technology.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-light text-center py-3">
+    <p class="mb-0">© 2026 Path2Fit | Built by ASU FIT Students</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning Hub | Path2FIT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/logo.png" alt="Path2Fit Logo" height="40" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="learning-hub.html">Learning Hub</a></li>
+        <li class="nav-item"><a class="nav-link" href="growth-tools.html">Self Assessment & Growth Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="success-stories.html">Success Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="workshops-events.html">Workshops & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="advisor.html">Tech Advisor</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- TITLE -->
+<div class="container text-center my-5">
+  <h1 class="fw-bold">Learning Hub</h1>
+  <p class="text-secondary">
+    Explore the majors offered at the Faculty of Information Technology (FIT) at ASU. <br>
+    Learn what each major is, what you might study, and follow real roadmaps to build your future.
+  </p>
+</div>
+
+<!-- MAJORS ACCORDION -->
+<div class="container mb-5">
+  <div class="accordion" id="majorsAccordion">
+
+    <!-- AI -->
+    <div class="accordion-item bg-light text-dark mb-3 shadow-sm">
+      <h2 class="accordion-header" id="headingAI">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI">
+          <img src="./images/AI_Icon.png" alt="AI Icon" style="width:50px;height:50px;" class="me-3">
+          Artificial Intelligence
+        </button>
+      </h2>
+      <div id="collapseAI" class="accordion-collapse collapse" data-bs-parent="#majorsAccordion">
+        <div class="accordion-body">
+          <p>
+            Artificial Intelligence focuses on building systems that can learn from data, recognize patterns, and make predictions or decisions.
+          </p>
+          <div class="p-3 bg-light border rounded mb-3">
+            <h5>What You Might Study</h5>
+            <ul>
+              <li>Introduction to Programming</li>
+              <li>Linear Algebra and Probability</li>
+              <li>Machine Learning Basics</li>
+              <li>Data Analysis Concepts</li>
+            </ul>
+          </div>
+          <a href="https://www.geeksforgeeks.org/blogs/how-to-become-an-artificial-intelligence-ai-engineer/" class="btn btn-primary me-2 mb-2" target="_blank">AI Roadmap</a>
+          <a href="workshops.html#ai-workshops" class="btn btn-outline-primary mb-2">AI Workshops & Events</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="accordion-item bg-light text-dark mb-3 shadow-sm">
+      <h2 class="accordion-header" id="headingCyber">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCyber">
+          <img src="./images/Cyber_Icon.png" alt="Cyber Icon" style="width:50px;height:50px;" class="me-3">
+          Cybersecurity
+        </button>
+      </h2>
+      <div id="collapseCyber" class="accordion-collapse collapse" data-bs-parent="#majorsAccordion">
+        <div class="accordion-body">
+          <p>
+            Cybersecurity is about protecting systems, networks, and data from attacks and misuse. Learn how hackers think and defend against threats.
+          </p>
+          <div class="p-3 bg-light border rounded mb-3">
+            <h5>What You Might Study</h5>
+            <ul>
+              <li>Networking Fundamentals</li>
+              <li>Operating Systems Concepts</li>
+              <li>Security Principles</li>
+              <li>Basic Cryptography</li>
+            </ul>
+          </div>
+          <a href="https://www.geeksforgeeks.org/ethical-hacking/cybersecurity-roadmap/" class="btn btn-primary me-2 mb-2" target="_blank">Cyber Roadmap</a>
+          <a href="workshops.html#cyber-workshops" class="btn btn-outline-primary mb-2">Cyber Workshops & Events</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software Engineering -->
+    <div class="accordion-item bg-light text-dark mb-3 shadow-sm">
+      <h2 class="accordion-header" id="headingSE">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSE">
+          <img src="./images/SE_Icon.png" alt="SE Icon" style="width:50px;height:50px;" class="me-3">
+          Software Engineering
+        </button>
+      </h2>
+      <div id="collapseSE" class="accordion-collapse collapse" data-bs-parent="#majorsAccordion">
+        <div class="accordion-body">
+          <p>
+            Software Engineering focuses on designing and building software systems such as websites, applications, and digital platforms.
+          </p>
+          <div class="p-3 bg-light border rounded mb-3">
+            <h5>What You Might Study</h5>
+            <ul>
+              <li>Programming Fundamentals</li>
+              <li>Object-Oriented Programming</li>
+              <li>Databases</li>
+              <li>Software Architecture</li>
+            </ul>
+          </div>
+          <a href="https://www.geeksforgeeks.org/software-engineering/how-to-become-a-software-developer/" class="btn btn-primary me-2 mb-2" target="_blank">SE Roadmap</a>
+          <a href="workshops.html#se-workshops" class="btn btn-outline-primary mb-2">SE Workshops & Events</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Development -->
+    <div class="accordion-item bg-light text-dark mb-3 shadow-sm">
+      <h2 class="accordion-header" id="headingGame">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGame">
+          <img src="./images/Game_Icon.png" alt="Game Dev Icon" style="width:50px;height:50px;" class="me-3">
+          Game Development
+        </button>
+      </h2>
+      <div id="collapseGame" class="accordion-collapse collapse" data-bs-parent="#majorsAccordion">
+        <div class="accordion-body">
+          <p>
+            Game Development combines programming, design, storytelling, and creativity to build interactive experiences and digital worlds.
+          </p>
+          <div class="p-3 bg-light border rounded mb-3">
+            <h5>What You Might Study</h5>
+            <ul>
+              <li>Programming for Games</li>
+              <li>Game Engine Basics</li>
+              <li>Game Design Principles</li>
+              <li>2D and 3D Graphics Concepts</li>
+            </ul>
+          </div>
+          <a href="https://www.geeksforgeeks.org/gfg-academy/how-to-become-a-game-developer/" class="btn btn-primary me-2 mb-2" target="_blank">Game Roadmap</a>
+          <a href="workshops.html#game-workshops" class="btn btn-outline-primary mb-2">Game Workshops & Events</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="bg-primary text-light text-center py-3">
+  <p class="mb-0">© 2026 Path2Fit | Built by ASU FIT Students</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

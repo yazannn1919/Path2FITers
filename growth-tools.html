@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Self-Assessment & Growth Tools - Path2FIT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .card-box {
+        padding: 30px;
+        border-radius: 12px;
+        border: 2px solid #d1d9ff;
+        color: black;
+      }
+
+      .card-box:hover {
+        border: black 5px solid;
+      }
+
+      .card-box h2 {
+        margin-bottom: 10px;
+      }
+
+      .card-box p {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .quiz-card {
+        background-color: white;
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .quiz-card:hover {
+        background-color: white;
+      }
+
+      legend {
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        padding: 0 10px;
+      }
+
+
+      .question {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/logo.png" alt="Path2Fit Logo" height="40" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="learning-hub.html">Learning Hub</a></li>
+        <li class="nav-item"><a class="nav-link active" href="growth-tools.html">Self Assessment & Growth Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="success-stories.html">Success Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="workshops-events.html">Workshops & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="advisor.html">Tech Advisor</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!--TITLE -->
+    <div class="container text-center my-5">
+      <h1 class="fw-bold">Self-Assessment & Growth Tools</h1>
+      <p class="text-secondary fs-5">
+        Jump into our Self-Assessment & Growth Tools and start figuring out the
+        career path that’s right for you! <br />
+        Explore fun tools that guide you through your strengths and interests.
+        <br />
+        Finish with a quick self-assessment that helps you pick the career that
+        fits you best!
+      </p>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <div class="container bg-light text-dark p-4 rounded mb-5">
+      <h2 class="text-center mb-3">
+        Step Into the Journey to Find Your Dream Career!
+      </h2>
+      <p class="text-center mb-4">
+        Some videos that would put you on the right way for choosing your career
+        path—watch them to explore your interests, discover your strengths, and
+        get started on a path that fits you.
+      </p>
+
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6 mb-3">
+          <video
+            src="./images/what is career.mp4"
+            alt="video"
+            class="w-100 rounded"
+            controls
+            muted
+          ></video>
+        </div>
+        <div class="col-md-6">
+          <h3>What is Career !?</h3>
+          <p>
+            "A career is the path of work you choose over time to grow your
+            skills, your goals, and build a life you enjoy. It’s more than just
+            a job—it’s your long-term journey in work and personal development."
+          </p>
+        </div>
+      </div>
+
+      <hr class="bg-dark" />
+
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6 order-md-2 mb-3">
+          <video
+            src="./images/Using Self-Evaluation to Choose a Career.mp4"
+            alt="video"
+            class="w-100 rounded"
+            controls
+            muted
+          ></video>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Using Self-Evaluation to Choose a Career</h3>
+          <p>
+            "This video guides you through the process of self-evaluation to
+            help you identify your strengths, interests, and values. By
+            understanding yourself better, you can make informed decisions about
+            which IT career path aligns best with your personal attributes"
+          </p>
+        </div>
+      </div>
+
+      <hr class="bg-dark" />
+
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6 mb-3">
+          <video
+            src="./images/Unlock Your Passion in Tech!.mp4"
+            alt="video"
+            class="w-100 rounded"
+            controls
+            muted
+          ></video>
+        </div>
+        <div class="col-md-6">
+          <h3>Unlock Your Passion in Tech!</h3>
+          <p>
+            "Dive deep into the world of technology, uncover what excites you
+            the most, and start creating a career path that challenges you,
+            inspires growth, and opens doors to endless possibilities."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECRET CARDS -->
+    <div class="container my-5 p-0" style="max-width: 1200px">
+      <div
+        style="
+          background-color: white;
+          color: black;
+          text-align: center;
+          padding: 20px;
+          border-radius: 10px 10px 0 0;
+          font-weight: bold;
+          font-size: 32px;
+        "
+      >
+        Secret Cards Game
+      </div>
+
+      <div
+        style="
+          background-color: #ffffff;
+          padding: 25px;
+          border-radius: 0 0 10px 10px;
+          border: 1px solid #d1d9ff;
+        "
+      >
+        <div class="row text-center mb-3">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #ffd670"
+              onclick="cards('CS')"
+            >
+              <h2
+                id="CScard"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I give orders to machines, and they never say no."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #e9ff70"
+              onclick="cards('SE')"
+            >
+              <h2
+                id="SEcard"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I make systems that must never break."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #70d6ff"
+              onclick="cards('GD')"
+            >
+              <h2
+                id="GDcard"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>
+                "I create worlds where <br />
+                players lose track of time."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center mb-3">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #70d6ff"
+              onclick="cards('CCC')"
+            >
+              <h2
+                id="CCCcard"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I see the threats before anyone else does."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #ff9770"
+              onclick="cards('CS2')"
+            >
+              <h2
+                id="CScard2"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I tell computers how to think, step by step."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #ffd670"
+              onclick="cards('CCC2')"
+            >
+              <h2
+                id="CCCcard2"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I guard your data while others try to break in."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center mb-3">
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #ffd670"
+              onclick="cards('AI')"
+            >
+              <h2
+                id="AIcard"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I watch, learn, and decide for myself."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #e9ff70"
+              onclick="cards('SE2')"
+            >
+              <h2
+                id="SEcard2"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I build code that many people depend on."</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card-box"
+              style="background-color: #ff9770"
+              onclick="cards('AI2')"
+            >
+              <h2
+                id="AIcard2"
+                style="
+                  font-size: 30px;
+                  font-style: italic;
+                  font-family: 'Times New Roman';
+                "
+              >
+                &nbsp;
+              </h2>
+              <p>"I know your patterns even before you do."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <button class="btn btn-primary" onclick="resetCards()">
+            Reset Cards
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SELF-ASSESSMENT QUIZ -->
+    <div class="container my-5 p-0" style="max-width: 1000px">
+      <!-- Header -->
+      <div
+        style="
+          background-color: white;
+          color: black;
+          text-align: center;
+          padding: 20px;
+          border-radius: 10px 10px 0 0;
+          font-weight: bold;
+          font-size: 32px;
+        "
+      >
+        Self Assessment
+      </div>
+
+      <!-- Form Section -->
+      <form
+        method="get"
+        style="
+          background-color: white;
+          padding: 25px;
+          border-radius: 0 0 10px 10px;
+          border: 1px solid #d1d9ff;
+        "
+      >
+        <p class="text-center fs-5 text-secondary">
+          Ready to discover your tech superpower? 🎯<br />
+          <strong>No right or wrong answers —</strong> just tick the boxes that
+          make you go <em>"Yes!"</em> or <em>"Heck yeah!"</em> 🚀
+        </p>
+        <p class="text-center fs-6" style="color: black;">
+          <strong>At the end:</strong> Take a look on your counts in each section & see
+          which major fits you most.
+        </p>
+
+        <!-- FIELDSETS AS CARDS -->
+        <fieldset class="quiz-card">
+          <legend>Artificial Intelligence</legend>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('AI')" /> I enjoy finding
+            patterns in everyday things.
+          </p>
+          <p class="question">
+            <input type="checkbox"  onclick="stage1('AI')" /> I like solving
+            logical puzzles.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('AI')" /> I am curious about
+            how computers can “learn.”
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('AI')" /> I enjoy thinking
+            about how to make tasks smarter or easier.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('AI')" /> I find data or
+            statistics interesting.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('AI')" /> I like analyzing
+            why things happen.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('AI')" /> I enjoy predicting
+            outcomes (even simple ones).
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('AI')" /> I like
+            experimenting to see how things change.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage3('AI')" /> I enjoy figuring
+            out “why” something happened.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage4('AI')" /> I’m comfortable
+            working with logical step-by-step tasks.
+          </p>
+        </fieldset>
+
+        <fieldset class="quiz-card">
+          <legend>Cybersecurity</legend>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('cyber')" /> I like
+            discovering hidden things or secrets.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('cyber')" /> I am curious
+            about how hackers think.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('cyber')" /> I enjoy solving
+            mysteries or investigating problems.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('cyber')" /> I like
+            protecting people or systems.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Cyber')" /> I enjoy learning
+            how things can go wrong.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Cyber')" /> I like
+            identifying weaknesses in systems or situations.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Cyber')" /> I enjoy
+            challenges that require patience.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Cyber')" /> I like
+            understanding how networks or devices work.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage3('cyber')" /> I feel good when
+            solving complex problems.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage4('cyber')" /> I pay attention
+            to details.
+          </p>
+        </fieldset>
+
+        <fieldset class="quiz-card">
+          <legend>Software Engineering</legend>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('SE')" /> I like building or
+            creating things.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('SE')" /> I enjoy planning or
+            organizing tasks.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('SE')" /> I am curious about
+            how apps or websites work.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('SE')" /> I like breaking big
+            problems into smaller steps.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('SE')" /> I enjoy working on
+            long-term projects.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('SE')" /> I like learning how
+            systems connect together.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('SE')" /> I enjoy improving
+            or fixing things.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('SE')" /> I like thinking in
+            a structured, organized way.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage3('SE')" /> I enjoy sketching
+            ideas or planning designs.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage4('SE')" /> I like making
+            useful tools or solutions.
+          </p>
+        </fieldset>
+
+        <fieldset class="quiz-card">
+          <legend>Game Development</legend>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('game dev')" /> I enjoy
+            playing games and thinking about how they work.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('game dev')" /> I like
+            creative storytelling.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('game dev')" /> I enjoy
+            designing visuals or imagining worlds.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage1('game dev')" /> I like mixing
+            creativity with logic.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Game dev')" /> I think about
+            how to improve game ideas.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Game dev')" /> I enjoy
+            experimenting with creative concepts.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Game dev')" /> I like
+            teamwork on big creative projects.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage2('Game dev')" /> I enjoy
+            music, animation, or art in games.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage3('game dev')" /> I like the
+            idea of building interactive experiences.
+          </p>
+          <p class="question">
+            <input type="checkbox" onclick="stage4('game dev')" /> I enjoy
+            imagining new characters, worlds, or challenges.
+          </p>
+        </fieldset>
+
+        <!-- COUNTERS -->
+        <div
+          class="container text-center"
+          style="
+            text-align: center;
+            background-color: #007bff;
+            padding: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            margin: 0 5px;
+            border: 2px solid black;
+          "
+        >
+            <h3 style="color: white; margin-bottom: 15px; text-align: center;">Your Counts:</h3>
+            <div class="row">
+            <div class="col">AI</div>
+            <div class="col">Cybersecurity</div>
+            <div class="col">SE</div>
+            <div class="col">GD</div>
+            </div>
+          <div class="row">
+            <div class="col" id="countAI">0</div>
+            <div class="col" id="countCCC">0</div>
+            <div class="col" id="countSE">0</div>
+            <div class="col" id="countGD">0</div>
+          </div>
+        </div>
+
+        <p class="text-center mt-3">
+          <input
+            type="reset"
+            class="btn btn-primary"
+            onclick="clearCounters()"
+            value="Clear All Answers"
+          />
+        </p>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-light text-center py-3">
+      <p class="mb-0">© 2026 Path2Fit | Built by ASU FIT Students</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function cards(dept) {
+        switch (dept) {
+          case "SE":
+            document.getElementById("SEcard").innerHTML =
+              "Software Engineering";
+            break;
+          case "CS":
+            document.getElementById("CScard").innerHTML = "Computer Science";
+            break;
+          case "AI":
+            document.getElementById("AIcard").innerHTML =
+              "Artificial Intelligence";
+            break;
+          case "GD":
+            document.getElementById("GDcard").innerHTML = "Game Development";
+            break;
+          case "CCC":
+            document.getElementById("CCCcard").innerHTML = "Cyber Security";
+            break;
+          case "CCC2":
+            document.getElementById("CCCcard2").innerHTML = "Cyber Security";
+            break;
+          case "SE2":
+            document.getElementById("SEcard2").innerHTML =
+              "Software Engineering";
+            break;
+          case "CS2":
+            document.getElementById("CScard2").innerHTML = "Computer Science";
+            break;
+          case "AI2":
+            document.getElementById("AIcard2").innerHTML =
+              "Artificial Intelligence";
+            break;
+        }
+      }
+      function resetCards() {
+        document.getElementById("SEcard").innerHTML = "&nbsp";
+        document.getElementById("CScard").innerHTML = "&nbsp";
+        document.getElementById("AIcard").innerHTML = "&nbsp";
+        document.getElementById("GDcard").innerHTML = "&nbsp";
+        document.getElementById("CCCcard").innerHTML = "&nbsp";
+        document.getElementById("CCCcard2").innerHTML = "&nbsp";
+        document.getElementById("SEcard2").innerHTML = "&nbsp";
+        document.getElementById("CScard2").innerHTML = "&nbsp";
+        document.getElementById("AIcard2").innerHTML = "&nbsp";
+      }
+      function cards(dept) {
+        switch (dept) {
+          case "SE":
+            document.getElementById("SEcard").innerHTML =
+              "Software Engineering";
+            break;
+          case "CS":
+            document.getElementById("CScard").innerHTML = "Computer Science";
+            break;
+          case "AI":
+            document.getElementById("AIcard").innerHTML ="Artificial Intelligence";
+            break;
+          case "GD":
+            document.getElementById("GDcard").innerHTML = "Game Development";
+            break;
+          case "CCC":
+            document.getElementById("CCCcard").innerHTML = "Cyber Security";
+            break;
+          case "CCC2":
+            document.getElementById("CCCcard2").innerHTML = "Cyber Security";
+            break;
+          case "SE2":
+            document.getElementById("SEcard2").innerHTML ="Software Engineering";
+            break;
+          case "CS2":
+            document.getElementById("CScard2").innerHTML = "Computer Science";
+            break;
+          case "AI2":
+            document.getElementById("AIcard2").innerHTML =
+              "Artificial Intelligence";
+            break;
+        }
+      }
+      function resetCards() {
+        document.getElementById("SEcard").innerHTML = "&nbsp";
+        document.getElementById("CScard").innerHTML = "&nbsp";
+        document.getElementById("AIcard").innerHTML = "&nbsp";
+        document.getElementById("GDcard").innerHTML = "&nbsp";
+        document.getElementById("CCCcard").innerHTML = "&nbsp";
+        document.getElementById("CCCcard2").innerHTML = "&nbsp";
+        document.getElementById("SEcard2").innerHTML = "&nbsp";
+        document.getElementById("CScard2").innerHTML = "&nbsp";
+        document.getElementById("AIcard2").innerHTML = "&nbsp";
+      }
+        function stage1(dep) {
+            alert('Boom! A new ' + dep + ' just landed in your list!');
+            counter(dep);
+        }
+        function stage2(dep) {
+            alert(dep + ' might just be your future best friend… career-wise!');
+            counter(dep);
+        }
+        function stage3(dep) {
+            alert('From what we can tell, you’re this close to joining the ' + dep + ' side!');
+            counter(dep);
+        }
+        function stage4(dep) {
+            alert('Congrats! Looks like ' + dep + ' is calling your name!');
+            counter(dep);
+        }
+        var countAI = 0;
+        var countSE = 0;
+        var countGD = 0;
+        var countCCC = 0;
+        function counter(dep) {
+            switch (dep) {
+                case 'SE':
+                    countSE++;
+                    document.getElementById("countSE").innerHTML = countSE;
+                    break;
+                case 'AI':
+                    countAI++;
+                    document.getElementById("countAI").innerHTML = countAI;
+                    break;
+                case 'game dev':
+                case 'Game dev':
+                    countGD++;
+                    document.getElementById("countGD").innerHTML = countGD;
+                    break;
+                case 'cyber':
+                case 'Cyber':
+                    countCCC++;
+                    document.getElementById("countCCC").innerHTML = countCCC;
+                    break;
+            }
+        }
+        function clearCounters() {
+            countAI = 0;
+            countSE = 0;
+            countGD = 0;
+            countCCC = 0;
+            document.getElementById("countAI").innerHTML = countAI;
+            document.getElementById("countSE").innerHTML = countSE;
+            document.getElementById("countGD").innerHTML = countGD;
+            document.getElementById("countCCC").innerHTML = countCCC;
+        }
+    </script>
+  </body>
+</html>
